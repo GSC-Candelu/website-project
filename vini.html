@@ -1,31 +1,90 @@
 <html>
     <head>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.1.2/tailwind.min.css" rel="stylesheet"/>
+        <link href="styles/style.css" rel="stylesheet"/>
     </head>
     <body class="subpixel-antialiased font-Montserrat ">
-        <nav class="sticky top-0 h-20 bg-green-800 p-5 sm:px-24 xl:px-64">
+        <nav class="sticky top-0 h-20 bg-green-800 p-5 sm:px-24 xl:px-64 z-50">
             <div class="mx-auto flex justify-between items-center">
                 <a href="index.html"
                     class="uppercase text-white text-xl xl:text-3xl font-bold whitespace-no-wrap font-Montserrat leading-normal tracking-tighter">G. S. C. - Candelu'</a>
                 <button class="block md:hidden uppercase inline-flex items-center bg-green-500 px-3 py-2 rounded-lg text-white">Menu <svg class="h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/></svg></button>
                 <div class="hidden md:block">
                     <a href="programma.html" class="px-4 uppercase text-white text-base font-bold whitespace-no-wrap font-Montserrat leading-normal tracking-tighter hover:text-green-500">Programma</a>
-                    <a href="vini.html" class="px-4 uppercase text-white text-base font-bold whitespace-no-wrap font-Montserrat leading-normal tracking-tighter hover:text-green-500">Vini</a>
+                    <a href="vini.html#aziende" class="px-4 uppercase text-white text-base font-bold whitespace-no-wrap font-Montserrat leading-normal tracking-tighter hover:text-green-500">Vini</a>
                     <a href="eventi.html" class="px-4 uppercase text-white text-base font-bold whitespace-no-wrap font-Montserrat leading-normal tracking-tighter hover:text-green-500">Eventi</a>
                     <a href="contatti.html" class="px-4 uppercase text-white text-base font-bold whitespace-no-wrap font-Montserrat leading-normal tracking-tighter hover:text-green-500">Contatti</a>
                 </div>
             </div>
         </nav>
+
         <main>
-            <section class="bg-white mt-12 mb-24">
+            <section class="sticky nav-btns top-0 pt-56 pb-0 m-0">
+                <a class="prev sticky top-0 pt-56 pb-0 m-0" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next sticky top-0 pt-56 pb-0 m-0" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+            <section class="bg-white mt-0 mb-24 pt-0"  id="aziende">
                 <h1 class="text-center uppercase text-green-800 text-2xl font-bold  leading-none tracking-normal">
                     46&#170; Mostra dei Vini del Piave
                 </h1>
                 <div class="flex flex-row items-center justify-center py-4"></div>
+                <div class="slides-container">
+                    <figure class="container px-16 mx-auto slide">
+                        <img class="mb-2 mx-auto" src="images/vini/vini-2023-0_standard.jpg" alt="">
+                    </figure>
 
-                <figure class="container px-16 mx-auto">
-                    <img class="mb-2 mx-auto" src="images/2023_vini_standard.jpg" alt="">
-                </figure>
+                    <figure class="container px-16 mx-auto slide">
+                        <img class="mb-2 mx-auto" src="images/vini/vini-2023-1_standard.jpg" alt="">
+                    </figure>
+
+                    <figure class="container px-16 mx-auto slide">
+                        <img class="mb-2 mx-auto" src="images/vini/vini-2023-2_standard.jpg" alt="">
+                    </figure>
+
+                    <figure class="container px-16 mx-auto slide">
+                        <img class="mb-2 mx-auto" src="images/vini/vini-2023-3_standard.jpg" alt="">
+                    </figure>
+
+                    <figure class="container px-16 mx-auto slide">
+                        <img class="mb-2 mx-auto" src="images/vini/vini-2023-4_standard.jpg" alt="">
+                    </figure>
+
+                    <figure class="container px-16 mx-auto slide">
+                        <img class="mb-2 mx-auto" src="images/vini/vini-2023-5_standard.jpg" alt="">
+                    </figure>
+
+                    <figure class="container px-16 mx-auto slide">
+                        <img class="mb-2 mx-auto" src="images/vini/vini-2023-6_standard.jpg" alt="">
+                    </figure>
+
+                    <figure class="container px-16 mx-auto slide">
+                        <img class="mb-2 mx-auto" src="images/vini/vini-2023-7_standard.jpg" alt="">
+                    </figure>
+
+                    <figure class="container px-16 mx-auto slide">
+                        <img class="mb-2 mx-auto" src="images/vini/vini-2023-8_standard.jpg" alt="">
+                    </figure>
+
+                    <figure class="container px-16 mx-auto slide">
+                        <img class="mb-2 mx-auto" src="images/vini/vini-2023-9_standard.jpg" alt="">
+                    </figure>
+
+                    <figure class="container px-16 mx-auto slide">
+                        <img class="mb-2 mx-auto" src="images/vini/vini-2023-10_standard.jpg" alt="">
+                    </figure>
+
+                    <figure class="container px-16 mx-auto slide">
+                        <img class="mb-2 mx-auto" src="images/vini/vini-2023-11_standard.jpg" alt="">
+                    </figure>
+
+                    <figure class="container px-16 mx-auto slide">
+                        <img class="mb-2 mx-auto" src="images/vini/vini-2023-12_standard.jpg" alt="">
+                    </figure>
+
+                    <figure class="container px-16 mx-auto slide">
+                        <img class="mb-2 mx-auto" src="images/vini/vini-2023-13_standard.jpg" alt="">
+                    </figure>
+                </div>
             </section>
             <section class="bg-green-800 -mt-12 py-16">
                 <div class="flex flex-col md:flex-row text-white text-center">
@@ -60,5 +119,5 @@
             <p class="pt-5 text-center text-green-800">Copyright &copy; Gruppo Sportivo Candelu'2023</p>
         </footer>
         </body>
-
+        <script type="text/javascript" src="scripts/slider.js"></script>
     </html>
